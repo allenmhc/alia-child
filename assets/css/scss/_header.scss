@@ -2,11 +2,23 @@
  * Header styles
  */
 
+.gray_header {
+  padding-top: 0;
+
+  .site_header {
+    padding-bottom: 0;
+
+    &::after {
+      background: none;
+    }
+  }
+}
 
 .text_logo {
   line-height: 1em;
   padding-top: 10px;
   padding-bottom: 0;
+  font-family: 'Poppins', sans-serif;
 
   .logo_weak {
     font-weight: 400;
@@ -18,10 +30,12 @@
 
 .text_tagline {
   font-family: 'Poppins', sans-serif;
-  font-weight: 100;
+  font-weight: 400;
   font-size: 13px;
   line-height: 1em;
-  color: $color-subheader-text;
+  & > a {
+    color: $color-subheader-text;
+  }
 }
 
 .navbar {

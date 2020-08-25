@@ -7,38 +7,58 @@
 /**
  * Header styles
  */
-/* line 6, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_header.scss */
-.text_logo {
-  line-height: 1em;
-  padding-top: 10px;
+/* line 5, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_header.scss */
+.gray_header {
+  padding-top: 0;
+}
+
+/* line 8, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_header.scss */
+.gray_header .site_header {
   padding-bottom: 0;
 }
 
 /* line 11, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_header.scss */
+.gray_header .site_header::after {
+  background: none;
+}
+
+/* line 17, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_header.scss */
+.text_logo {
+  line-height: 1em;
+  padding-top: 10px;
+  padding-bottom: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* line 23, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_header.scss */
 .text_logo .logo_weak {
   font-weight: 400;
 }
 
-/* line 14, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_header.scss */
+/* line 26, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_header.scss */
 .text_logo .logo_strong {
   font-weight: 700;
 }
 
-/* line 19, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_header.scss */
+/* line 31, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_header.scss */
 .text_tagline {
   font-family: 'Poppins', sans-serif;
-  font-weight: 100;
+  font-weight: 400;
   font-size: 13px;
   line-height: 1em;
+}
+
+/* line 36, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_header.scss */
+.text_tagline > a {
   color: #A9A9A9;
 }
 
-/* line 27, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_header.scss */
+/* line 41, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_header.scss */
 .navbar {
   font-family: 'Metropolis', 'Libre Franklin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-/* line 32, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_header.scss */
+/* line 46, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_header.scss */
 .header_rss .header_control_icon {
   width: 24px;
   height: 100%;
