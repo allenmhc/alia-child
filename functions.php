@@ -22,10 +22,29 @@ function alia_enqueue_styles() {
         wp_get_theme()->get('Version')
     );
 
+    wp_enqueue_style( 'nunito sans',
+        get_stylesheet_directory_uri() . '/assets/fonts/NunitoSans/stylesheet.css',
+        array(),
+        wp_get_theme()->get('Version')
+    );
+
     if ( is_rtl() ) {
     	wp_style_add_data( $parent_style, 'rtl', 'replace' );
     }
 
 }
 add_action( 'wp_enqueue_scripts', 'alia_enqueue_styles' );
+
+if ( ! function_exists( 'alia_custom_body_css' ) ) :
+function alia_custom_body_css() {
+  $main_font_css = 'nunito_sanslight, sans-serif';
+  $main_bold_font_css = 'nunito_sansbold, sans-serif';
+  $main_italic_font_css = 'nunito_sanslight_italic, sans-serif';
+  $custom_css = "body { font-family: {$main_font_css}; }";
+  $custom_css .= "strong { font-family: {$main_bold_font_css}; }";
+  $custom_css .= "em { font-family: {$main_italic_font_css}; }";
+  wp_add_inline_style( 'alia-customstyle', $custom_css );
+}
+endif;
+add_action( 'wp_enqueue_scripts', 'alia_custom_body_css', 60);
 ?>
