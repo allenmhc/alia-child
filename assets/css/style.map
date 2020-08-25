@@ -1,0 +1,18 @@
+{
+	"version": 3,
+	"file": "style.css",
+	"sources": [
+		"scss/style.scss",
+		"scss/_variables.scss",
+		"scss/_mixins.scss",
+		"scss/_header.scss"
+	],
+	"sourcesContent": [
+		"@import\n  \"variables\",\n  \"mixins\",\n  \"header\";\n",
+		"/**\n * Variables\n */\n\n// Colors\n$color-highlight: #FF3B3F;\n$color-header-text: #6d6d6d;\n$color-subheader-text: #A9A9A9;\n$color-sky: #CAEBF2;\n$color-neutral: #EFEFEF;\n",
+		"/*\n * Mixins\n */\n\n@mixin textShadowToCropUnderline($color) {\n  text-shadow: .03em 0 $color,\n               -.03em 0 $color,\n               0 .03em $color,\n               0 -.03em $color,\n               .06em 0 $color,\n               -.06em 0 $color,\n               .09em 0 $color,\n               -.09em 0 $color,\n               .12em 0 $color,\n               -.12em 0 $color,\n               .15em 0 $color,\n               -.15em 0 $color;\n}\n\n@mixin linkUnderlines($backgroundColor, $color) {\n  $selectionColor: #eee;\n  color: $color;\n  text-decoration: none;\n  @include textShadowToCropUnderline($backgroundColor);\n  background-image: linear-gradient($backgroundColor, $backgroundColor),\n                    linear-gradient($backgroundColor, $backgroundColor),\n                    linear-gradient($color, $color);\n  background-size: .05em 1px, .05em 1px, 1px 1px;\n  background-repeat: no-repeat, no-repeat, repeat-x;\n  background-position: 0% 90%, 100% 90%, 0% 90%;\n\n  &::selection {\n    @include textShadowToCropUnderline($selectionColor);\n    background: $selectionColor;\n  }\n\n  &::-moz-selection {\n    @include textShadowToCropUnderline($selectionColor);\n    background: $selectionColor;\n  }\n\n  &:before, &:after, *, *:before, *:after {\n    text-shadow: none;\n  }\n\n  &:visited {\n    color: $color;\n  }\n}\n",
+		"/**\n * Header styles\n */\n\n\n.text_logo {\n  line-height: 1em;\n  padding-top: 10px;\n  padding-bottom: 0;\n\n  .logo_weak {\n    font-weight: 400;\n  }\n  .logo_strong {\n    font-weight: 700;\n  }\n}\n\n.text_tagline {\n  font-family: 'Poppins', sans-serif;\n  font-weight: 100;\n  font-size: 13px;\n  line-height: 1em;\n  color: $color-subheader-text;\n}\n\n.navbar {\n  font-family: 'mauerMtrpl', 'Libre Franklin', 'Helvetica Neue', Helvetica, Arial, sans-serif;\n}\n\n.header_rss {\n  .header_control_icon {\n    width: 24px;\n    height: 100%;\n    line-height: 19px;\n    text-align: right;\n  }\n}\n"
+	],
+	"names": [],
+	"mappings": "ACAA;;GAEG;ACFH;;GAEG;ACFH;;GAEG;;AAGH,AAAA,UAAU,CAAC;EACT,WAAW,EAAE,GAAG;EAChB,WAAW,EAAE,IAAI;EACjB,cAAc,EAAE,CAAC;CAQlB;;;AAXD,AAKE,UALQ,CAKR,UAAU,CAAC;EACT,WAAW,EAAE,GAAG;CACjB;;;AAPH,AAQE,UARQ,CAQR,YAAY,CAAC;EACX,WAAW,EAAE,GAAG;CACjB;;;AAGH,AAAA,aAAa,CAAC;EACZ,WAAW,EAAE,qBAAqB;EAClC,WAAW,EAAE,GAAG;EAChB,SAAS,EAAE,IAAI;EACf,WAAW,EAAE,GAAG;EAChB,KAAK,EFhBgB,OAAO;CEiB7B;;;AAED,AAAA,OAAO,CAAC;EACN,WAAW,EAAE,8EAA8E;CAC5F;;;AAED,AACE,WADS,CACT,oBAAoB,CAAC;EACnB,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;EACZ,WAAW,EAAE,IAAI;EACjB,UAAU,EAAE,KAAK;CAClB"
+}
