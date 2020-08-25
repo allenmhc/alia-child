@@ -43,6 +43,14 @@ if (alia_option('alia_default_logo_retina')) {
 			</div>
 			<!-- end search box -->
 
+      <!-- start rss -->
+      <div class="header_rss header_control_wrapper">
+        <a href="<?php echo esc_url( home_url( '/feed' ) ); ?>" rel="rss">
+          <i class="fas fa-rss header_control_icon"></i>
+        </a>
+      </div>
+      <!-- end rss -->
+
 			<?php if( has_nav_menu( 'top' ) || is_active_sidebar( 'sidebar-sliding' ) ): ?>
 			<div class="header_sliding_sidebar_control header_control_wrapper">
 				<a id="user_control_icon" class="sliding_sidebar_button" href="#">
@@ -71,6 +79,14 @@ if (alia_option('alia_default_logo_retina')) {
 					<?php get_template_part( 'header', 'searchform' ); ?>
 			</div>
 			<!-- end search box -->
+
+      <!-- start rss -->
+      <div class="header_search header_control_wrapper">
+        <a href="<?php echo esc_url( home_url( '/feed' ) ); ?>" rel="rss">
+          <i class="fas fa-rss header_control_icon"></i>
+        </a>
+      </div>
+      <!-- end rss -->
 
 			<?php if( has_nav_menu( 'top' ) || is_active_sidebar( 'sidebar-sliding' ) ): ?>
 			<div class="header_sliding_sidebar_control header_control_wrapper">
