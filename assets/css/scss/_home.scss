@@ -1,0 +1,13 @@
+/**
+ * Home Styles
+ */
+
+.social_icons_list {
+  .social_icon { font-size: 18px; }
+  .social_icon {
+    &.social_icon_twitter:hover { color: $color-twitter; }
+    &.social_icon_linkedin:hover { color: $color-linkedin; }
+    &.social_icon_github:hover { color: $color-github; }
+    &.social_icon_medium-m:hover { color: $color-medium-m; }
+  }
+}

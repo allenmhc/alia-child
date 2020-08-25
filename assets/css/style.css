@@ -76,4 +76,32 @@
   color: #6d6d6d;
 }
 
+/**
+ * Home Styles
+ */
+/* line 6, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_home.scss */
+.social_icons_list .social_icon {
+  font-size: 18px;
+}
+
+/* line 8, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_home.scss */
+.social_icons_list .social_icon.social_icon_twitter:hover {
+  color: #1DA1F2;
+}
+
+/* line 9, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_home.scss */
+.social_icons_list .social_icon.social_icon_linkedin:hover {
+  color: #0077B5;
+}
+
+/* line 10, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_home.scss */
+.social_icons_list .social_icon.social_icon_github:hover {
+  color: #6e5494;
+}
+
+/* line 11, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_home.scss */
+.social_icons_list .social_icon.social_icon_medium-m:hover {
+  color: #00ab6c;
+}
+
 /*# sourceMappingURL=style.css.map */
