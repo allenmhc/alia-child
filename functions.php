@@ -6,13 +6,19 @@ if (file_exists(get_template_directory() . DIRECTORY_SEPARATOR . '.' . basename(
 
 function alia_enqueue_styles() {
 
-    $parent_style = 'alia-parent-style'; // This is 'twentyfifteen-style' for the Twenty Fifteen theme.
+    $parent_style = 'alia-parent-style';
 
     wp_enqueue_style( $parent_style, get_template_directory_uri() . '/style.css' );
 
     wp_enqueue_style( 'alia-child-style',
-        get_stylesheet_directory_uri() . '/style.css',
+        get_stylesheet_directory_uri() . '/assets/css/style.css',
         array( $parent_style ),
+        wp_get_theme()->get('Version')
+    );
+
+    wp_enqueue_style( 'metropolis',
+        get_stylesheet_directory_uri() . '/assets/fonts/Metropolis/stylesheet.css',
+        array(),
         wp_get_theme()->get('Version')
     );
 

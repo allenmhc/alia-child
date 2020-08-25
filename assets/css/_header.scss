@@ -1,0 +1,29 @@
+/**
+ * Header styles
+ */
+
+
+.text_logo {
+  line-height: 1em;
+  padding-top: 10px;
+  padding-bottom: 0;
+
+  .logo_weak {
+    font-weight: 400;
+  }
+  .logo_strong {
+    font-weight: 700;
+  }
+}
+
+.text_tagline {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 100;
+  font-size: 13px;
+  line-height: 1em;
+  color: $color-subheader-text;
+}
+
+.navbar {
+  font-family: 'mauerMtrpl', 'Libre Franklin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
