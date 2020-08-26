@@ -17,3 +17,54 @@
     line-height: 1.5em;
   }
 }
+
+.blog_index_area {
+  // Place the title + meta on top of the post image itself
+  .first_full_width {
+    .blog_post_container {
+      position: relative;
+      margin-bottom: 0;
+      padding-bottom: 0;
+      border-bottom: none;
+    }
+
+    .post_banner img {
+      filter: brightness(60%);
+    }
+
+    .post_body {
+      position: absolute;
+      bottom: 24px;
+    }
+
+    // Invert all the text colors to show up over the filtered post BG
+    .post_title a {
+      color: $color-neutral;
+      &::before {
+        background-color: $color-neutral;
+      }
+      &::after {
+        background: linear-gradient(to right,#eeeeee 0,#eeeeee 35%,#eeeeee 65%,rgba(255, 255, 255, 0.0) 100%);
+        background: -ms-linear-gradient(left,#eeeeee 0,#eeeeee 35%,#eeeeee 65%,rgba(255, 255, 255, 0.0) 100%);
+        background: -o-linear-gradient(left,#eeeeee 0,#eeeeee 35%,#eeeeee 65%,rgba(255, 255, 255, 0.0) 100%);
+        background: -webkit-linear-gradient(left,#eeeeee 0,#eeeeee 35%,#eeeeee 65%,rgba(255, 255, 255, 0.0) 100%);
+        background: -moz-linear-gradient(left,#eeeeee 0,#eeeeee 35%,#eeeeee 65%,rgba(255, 255, 255, 0.0) 100%);
+        background: -webkit-gradient(linear,left top,right top,color-stop(0%,#eeeeee),color-stop(35%,#eeeeee),color-stop(65%,#eeeeee),color-stop(100%,rgba(255, 255, 255, 0.0)));
+      }
+    }
+
+    .post_meta_item {
+      color: $color-neutral-darker;
+      .post_meta_icon { color: $color-neutral-darker; }
+      &.meta_item_category a {
+        color: $color-neutral-darker;
+        &:hover { color: $color-neutral; }
+      }
+    }
+
+    .post_date_link {
+      color: $color-neutral-darker;
+      &:hover .post_meta_item { color: $color-neutral; }
+    }
+  }
+}
