@@ -68,3 +68,53 @@
     }
   }
 }
+
+.post_date_link {
+  .continue_reading_dots {
+    float: right;
+    margin-left: 0;
+
+    .continue_reading_squares {
+      float: left;
+    }
+
+    .continue_reading_squares > span {
+      width: 2px;
+      height: 2px;
+      display: block;
+      float: left;
+      margin-top: 13px;
+      margin-right: 3px;
+      background-color: #e0e0e0;
+      border-radius: 50%;
+      -o-transition: all 0.15s ease-in;
+      -webkit-transition: all 0.15s ease-in;
+      -moz-transition: all 0.15s ease-in;
+      transition: all 0.15s ease-in;
+    }
+
+    .readmore_icon {
+      float: left;
+      margin-top: 9px;
+      font-size: 10px;
+      margin-left: -1px;
+      color: #e0e0e0;
+      -o-transition: all 0.15s ease-in;
+      -webkit-transition: all 0.15s ease-in;
+      -moz-transition: all 0.15s ease-in;
+      transition: all 0.15s ease-in;
+    }
+  }
+
+  &:hover .continue_reading_dots {
+    .continue_reading_squares > span {
+      margin-right: 4px;
+      background-color: #ff374a;
+    }
+
+    .readmore_icon {
+      margin-left: 1px;
+      color: #ff374a;
+    }
+  }
+}

@@ -231,4 +231,145 @@ function alia_custom_css() {
 }
 endif;
 add_action( 'wp_enqueue_scripts', 'alia_custom_css', 55 );
+
+/* --------
+post meta tags
+------------------------------------------- */
+if ( ! function_exists( 'alia_post_meta' ) ) :
+function alia_post_meta($post_position = '') {
+	if ( is_sticky() && is_home() && ! is_paged() ) {
+		printf( '<span class="blog_meta_item sticky_post">%s</span>', '<i class="fas fa-bookmark"></i>' );
+	}
+
+	$format = get_post_format();
+	$standard_format_icon = 'fas fa-align-left standardpost_format_icon';
+
+	#if ( current_theme_supports( 'post-formats', $format ) ) {
+
+	switch ($format) {
+		case 'audio':
+			$format_icon = 'fas fa-headphones-alt';
+			break;
+		case 'video':
+			$format_icon = 'fas fa-film';
+			break;
+		case 'image':
+			$format_icon = 'far fa-image';
+			break;
+		case 'aside':
+			$format_icon = 'far fa-sticky-note';
+			break;
+		case 'quote':
+			$format_icon = 'fa-quote-left';
+			break;
+		case 'link':
+			$format_icon = 'fa-external-link';
+			break;
+		case 'gallery':
+			$format_icon = 'far fa-images';
+			break;
+		case 'status':
+			$format_icon = 'far fa-clipboard';
+			break;
+		case 'chat':
+			$format_icon = 'far fa-sticky-note';
+			break;
+		default:
+			$format_icon = $standard_format_icon;
+	}
+
+	if (get_post_format() != '' ) {
+		$post_format_link = '<a class="post_format_icon_link" href="'.get_post_format_link( $format ).'"><i class="'.$format_icon.' post_meta_icon '.$format.'post_fromat_icon"></i></a>';
+	}else{
+		$post_format_link = '<i class="'.$format_icon.' post_meta_icon '.$format.'post_fromat_icon"></i>';
+	}
+
+
+	if (alia_cross_option('alia_show_author_avatar', '', 1) && get_avatar(get_the_author_meta('ID')) ) {
+		if ( in_array( get_post_type(), array( 'page', 'post' ) ) ) {
+			//if ( is_multi_author() ) {
+			printf( '<span class="post_meta_item meta_item_author_avatar"><a class="meta_author_avatar_url" href="%1$s">%2$s</a></span>',
+				esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
+				alia_filter_lazyload_images(get_avatar(get_the_author_meta('ID'), 40))
+			);
+			//}
+		}
+	}
+	#}
+
+	echo '<div class="post_meta_info post_meta_row clearfix">';
+
+	if (alia_cross_option('alia_show_author', '', 1)) {
+		if ( in_array( get_post_type(), array( 'page', 'post' ) ) ) {
+			//if ( is_multi_author() ) {
+				if ($post_position == 'normalhentry') {
+					printf( '<span class="post_meta_item meta_item_author"><span class="author vcard author_name"><span class="fn"><a class="meta_author_name url" href="%1$s">%2$s</a></span></span></span>',
+						esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
+						get_the_author()
+					);
+				}else{
+					printf( '<span class="post_meta_item meta_item_author"><span class="author author_name"><span><a class="meta_author_name" href="%1$s">%2$s</a></span></span></span>',
+						esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
+						get_the_author()
+					);
+				}
+
+			//}
+		}
+	}
+
+	if (alia_cross_option('alia_show_categories', '', 1) ) {
+		$categories_list = get_the_category_list( '<span>'.esc_attr_x( ', ', 'Used between list items, there is a space after the comma.', 'alia' ).'</span>' );
+
+		if ( $categories_list ) {
+
+			printf( '<span class="post_meta_item meta_item_category">%1$s%2$s</span>',
+				$post_format_link,
+				$categories_list
+			);
+		}
+	}
+
+	if (alia_cross_option('alia_show_date', '', 1)) {
+		if ( in_array( get_post_type(), array( 'page', 'post', 'attachment' ) ) ) {
+			$time_string = '<time class="entry-date published updated" datetime="%1$s">%2$s</time>';
+
+			if ( get_the_time( 'U' ) !== get_the_modified_time( 'U' ) ) {
+				$time_string = '<time class="entry-date published updated" datetime="%1$s">%2$s</time>';
+			}
+
+			$time_string = sprintf( $time_string,
+				esc_attr( get_the_date( 'c' ) ),
+				get_the_date()
+			);
+
+			echo '<a class="post_date_link" href="'.get_permalink().'">';
+				printf( '<span class="post_meta_item meta_item_date"><span class="screen-reader-text"></span>%1$s</span>', $time_string );
+
+        if (!is_single()) {
+          // Read more arrow
+          echo sprintf( '<span class="continue_reading_dots"><span class="continue_reading_squares"><span></span><span></span><span></span><span></span></span><i class="fas fa-chevron-right readmore_icon"></i></span>',
+            esc_url( get_permalink( get_the_ID() ) )
+          );
+        }
+
+			echo '</a>';
+		}
+	}
+
+	if (alia_cross_option('alia_show_views', '', 0) == 1) {
+		if ( in_array( get_post_type(), array( 'page', 'post', 'attachment' ) ) ) {
+			$views = (get_post_meta(get_the_ID(), 'hits')) ? get_post_meta(get_the_ID(), 'hits')[0] : 0 ;
+			echo '<a class="post_view_link" href="'.get_permalink().'">';
+			printf( '<span class="post_meta_item meta_item_view"><i class="post_meta_icon far fa-eye"></i>%1$s</span>',
+			$views
+						);
+			echo '</a>';
+		}
+	}
+
+	echo '</div>';
+
+}
+endif;
 ?>
