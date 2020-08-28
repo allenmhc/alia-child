@@ -5,3 +5,16 @@
 .entry-content {
   line-height: 1.5em;
 }
+
+// Contact form
+.wpcf7 {
+  p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  input[type="text"],
+  input[type="email"] {
+    width: 100%;
+  }
+}

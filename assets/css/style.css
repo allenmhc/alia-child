@@ -238,4 +238,16 @@
   line-height: 1.5em;
 }
 
+/* line 11, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_page.scss */
+.wpcf7 p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* line 16, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_page.scss */
+.wpcf7 input[type="text"],
+.wpcf7 input[type="email"] {
+  width: 100%;
+}
+
 /*# sourceMappingURL=style.css.map */
