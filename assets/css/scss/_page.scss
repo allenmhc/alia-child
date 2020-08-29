@@ -18,3 +18,16 @@
     width: 100%;
   }
 }
+
+// Articles
+.blog_post_readmore {
+  .continue_reading_dots {
+      margin-top: -2px;
+  }
+
+  a.more-link {
+    color: $color-subheader-text;
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+  }
+}

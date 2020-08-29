@@ -250,4 +250,16 @@
   width: 100%;
 }
 
+/* line 24, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_page.scss */
+.blog_post_readmore .continue_reading_dots {
+  margin-top: -2px;
+}
+
+/* line 28, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_page.scss */
+.blog_post_readmore a.more-link {
+  color: #A9A9A9;
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+}
+
 /*# sourceMappingURL=style.css.map */

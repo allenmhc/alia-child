@@ -178,8 +178,20 @@ if ( !is_single() && alia_cross_option('alia_blog_show_all_content', '', 0) && i
 				echo '</div>'; // close .entry-content
 			} elseif (!isset($alia_content_layout) || $alia_content_layout != 'layout_with_sidebar' || $post_banner_class == 'no_post_banner') {
 				echo '<div class="entry-summary blog_post_text blog_post_description">';
+          // Layout specifically for Articles, "list"
+          if ($alia_content_width == 'two_coloumns_list' && has_post_thumbnail()) {
+            echo alia_excerpt(40);
+          }
 
 					echo '<div class="blog_post_control_item blog_post_readmore">';
+
+            // Layout specifically for Articles, "list"
+            if ($alia_content_width == 'two_coloumns_list' && has_post_thumbnail()) {
+              echo sprintf( '<a href="%1$s" class="more-link">%2$s<span class="continue_reading_dots"><span class="continue_reading_squares"><span></span><span></span><span></span><span></span></span><i class="fas fa-chevron-right readmore_icon"></i></span></a>',
+                esc_url( get_permalink( get_the_ID() ) ),
+                esc_attr__( 'Continue reading', 'alia' )
+              );
+            }
 
 						echo '<div class="blog_list_meta">';
 
