@@ -90,7 +90,7 @@ if ( !is_single() && alia_cross_option('alia_blog_show_all_content', '', 0) && i
 
 			<?php if ( !is_single(get_the_ID()) ): ?>
 			<a href="<?php the_permalink(); ?>">
-				<?php the_post_thumbnail( $alia_post_banner ); ?>
+				<?php the_post_thumbnail( 'full' ); ?>
 			</a>
 			<?php else: ?>
 				<?php the_post_thumbnail( $alia_post_banner ); ?>
