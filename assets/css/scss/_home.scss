@@ -13,8 +13,15 @@
 }
 
 .alia-about-me {
+  img.alia_about_me_image {
+    width: 200px;
+    float: left;
+    margin: -24px 24px -24px 0;
+  }
+
   .text-widget {
-    line-height: 1.5em;
+    text-align: left;
+    line-height: 2em;
   }
 }
 

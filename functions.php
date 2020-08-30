@@ -372,4 +372,7 @@ function alia_post_meta($post_position = '') {
 
 }
 endif;
+
+// About Me Widget Override
+require dirname( __FILE__ ) . '/inc/widgets/about-me.php';
 ?>
