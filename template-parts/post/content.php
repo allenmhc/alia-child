@@ -99,6 +99,16 @@ if ( !is_single() && alia_cross_option('alia_blog_show_all_content', '', 0) && i
 		<?php $post_banner_class = 'has_post_banner'; ?>
 	<?php endif; ?>
 
+  <?php if (!is_single(get_the_ID()) && !has_post_thumbnail()) : ?>
+    <!-- Spacer for non-thumbnail homepage post layouts -->
+    <figure class="post_banner">
+      <a href="<?php the_permalink(); ?>">
+        <div class="spacer"></div>
+      </a>
+    </figure>
+    <?php $post_banner_class = 'has_post_banner'; ?>
+  <?php endif; ?>
+
 	<div class="post_body <?php echo esc_attr($post_banner_class); ?>">
 		<?php if (!is_single(get_the_ID())): ?>
 			<div class="post_header">
