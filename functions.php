@@ -345,14 +345,6 @@ function alia_post_meta($post_position = '') {
 
 			echo '<a class="post_date_link" href="'.get_permalink().'">';
 				printf( '<span class="post_meta_item meta_item_date"><span class="screen-reader-text"></span>%1$s</span>', $time_string );
-
-        if (!is_single()) {
-          // Read more arrow
-          echo sprintf( '<span class="continue_reading_dots"><span class="continue_reading_squares"><span></span><span></span><span></span><span></span></span><i class="fas fa-chevron-right readmore_icon"></i></span>',
-            esc_url( get_permalink( get_the_ID() ) )
-          );
-        }
-
 			echo '</a>';
 		}
 	}
