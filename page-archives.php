@@ -37,8 +37,7 @@
             'date_query' => array('year' => $i),
             'meta_key' => '_thumbnail_id',
             'orderby' => 'rand',
-            'posts_per_page' => 4,
-
+            'posts_per_page' => 4
           ));
 
           while ($wp_query->have_posts()) : $wp_query->the_post();
