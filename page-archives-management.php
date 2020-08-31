@@ -1,6 +1,6 @@
 <?php
   /**
-   * Template Name: Articles Template
+   * Template Name: Archives — Management Template
    *
    * @package WordPress
    * @subpackage Alia Child
@@ -110,7 +110,7 @@
 </section><!-- #primary -->
 
 <section id="primary" class="container main_content_area blog_index_area <?php echo alia_option('alia_blog_layout', 'flist') ?>_main_content_container">
-			<h4 class="page-title screen-reader-text entry-title"><?php  printf( esc_html__( '%1$s Articles.', 'alia' ), get_bloginfo( 'name' ) );; ?></h4>
+			<h4 class="page-title screen-reader-text entry-title"><?php  printf( esc_html__( '%1$s Book Reviews.', 'alia' ), get_bloginfo( 'name' ) );; ?></h4>
 
       <?php
       wp_reset_query();
@@ -119,19 +119,17 @@
         'post_type'      => 'post',
         'paged'          => $paged,
         'orderby'        => 'date',
-        'meta_key'       => 'article',
-        'meta_value'     => 1
+        'category_name'  => 'management',
       );
       $wp_query = new WP_Query( $args );
       ?>
 
 			<?php
-      set_query_var('custom_blog_layout', 'list');
+      set_query_var('custom_blog_layout', 'grid3col');
 			if ( $wp_query->have_posts() ) :
 				get_template_part( 'template-parts/page/blog', 'customlayout' );
 			else :
 				get_template_part( 'template-parts/post/content', 'none' );
-
 			endif;
 			?>
 
