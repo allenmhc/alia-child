@@ -43,10 +43,20 @@
 }
 
 .header_rss {
+  padding-top: 7px;
+
   .header_control_icon {
     width: 24px;
     height: 100%;
     line-height: 19px;
     text-align: right;
   }
+}
+
+.header_sliding_sidebar_control {
+  padding-top: 7px;
+}
+
+.header_controls {
+  .fa:hover, .fas:hover { color: $color-highlight; }
 }

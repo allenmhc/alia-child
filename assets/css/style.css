@@ -58,12 +58,27 @@
   font-family: 'Metropolis', 'Libre Franklin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-/* line 46, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_header.scss */
+/* line 45, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_header.scss */
+.header_rss {
+  padding-top: 7px;
+}
+
+/* line 48, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_header.scss */
 .header_rss .header_control_icon {
   width: 24px;
   height: 100%;
   line-height: 19px;
   text-align: right;
+}
+
+/* line 56, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_header.scss */
+.header_sliding_sidebar_control {
+  padding-top: 7px;
+}
+
+/* line 61, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_header.scss */
+.header_controls .fa:hover, .header_controls .fas:hover {
+  color: #FF3B3F;
 }
 
 /**
