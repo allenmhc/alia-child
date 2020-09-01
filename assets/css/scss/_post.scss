@@ -6,14 +6,23 @@
 
 $color-link-hover: scale-color($color-highlight, $lightness: -50%);
 
+// Featured images & credits
+figcaption.credit {
+  font-size: 13px;
+  text-align: center;
+  font-style: normal;
+  color: $color-subheader-text;
+  line-height: 1em;
+}
+
 .blog_post_container {
   .entry-content {
     line-height: 1.4em;
 
     // Paragraphs
     p {
-      margin-top: 24px;
-      margin-bottom: 24px;
+      margin-top: 32px;
+      margin-bottom: 32px;
     }
 
     // Lists

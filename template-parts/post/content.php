@@ -94,6 +94,15 @@ if ( !is_single() && alia_cross_option('alia_blog_show_all_content', '', 0) && i
 			</a>
 			<?php else: ?>
 				<?php the_post_thumbnail( $alia_post_banner ); ?>
+        <?php
+          // Include Media Credits if it exists and isn't me
+          if (function_exists('get_media_credit')) {
+            $media_credit = get_media_credit( get_post_thumbnail_id() );
+            if ($media_credit && $media_credit != get_the_author()) {
+              echo '<figcaption class="credit">Image credits: ' .$media_credit. '</figcaption>';
+            }
+          }
+        ?>
 			<?php endif; ?>
 		</figure>
 		<?php $post_banner_class = 'has_post_banner'; ?>
