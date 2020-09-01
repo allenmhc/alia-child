@@ -331,4 +331,151 @@
   background-color: #E0E0E0;
 }
 
+/**
+ * Single post styles
+ */
+@use "sass:color";
+/* line 8, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_post.scss */
+.blog_post_container .entry-content {
+  line-height: 1.4em;
+}
+
+/* line 12, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_post.scss */
+.blog_post_container .entry-content a {
+  color: #FF3B3F;
+  text-decoration: none;
+  text-shadow: 0.03em 0 #fff, -0.03em 0 #fff, 0 0.03em #fff, 0 -0.03em #fff, 0.06em 0 #fff, -0.06em 0 #fff, 0.09em 0 #fff, -0.09em 0 #fff, 0.12em 0 #fff, -0.12em 0 #fff, 0.15em 0 #fff, -0.15em 0 #fff;
+  background-image: linear-gradient(#fff, #fff), linear-gradient(#fff, #fff), linear-gradient(#FF3B3F, #FF3B3F);
+  background-size: .05em 1px, .05em 1px, 1px 1px;
+  background-repeat: no-repeat, no-repeat, repeat-x;
+  background-position: 0% 90%, 100% 90%, 0% 90%;
+}
+
+/* line 32, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_mixins.scss */
+.blog_post_container .entry-content a::selection {
+  text-shadow: 0.03em 0 #eee, -0.03em 0 #eee, 0 0.03em #eee, 0 -0.03em #eee, 0.06em 0 #eee, -0.06em 0 #eee, 0.09em 0 #eee, -0.09em 0 #eee, 0.12em 0 #eee, -0.12em 0 #eee, 0.15em 0 #eee, -0.15em 0 #eee;
+  background: #eee;
+}
+
+/* line 37, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_mixins.scss */
+.blog_post_container .entry-content a::-moz-selection {
+  text-shadow: 0.03em 0 #eee, -0.03em 0 #eee, 0 0.03em #eee, 0 -0.03em #eee, 0.06em 0 #eee, -0.06em 0 #eee, 0.09em 0 #eee, -0.09em 0 #eee, 0.12em 0 #eee, -0.12em 0 #eee, 0.15em 0 #eee, -0.15em 0 #eee;
+  background: #eee;
+}
+
+/* line 42, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_mixins.scss */
+.blog_post_container .entry-content a:before, .blog_post_container .entry-content a:after, .blog_post_container .entry-content a *, .blog_post_container .entry-content a *:before, .blog_post_container .entry-content a *:after {
+  text-shadow: none;
+}
+
+/* line 46, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_mixins.scss */
+.blog_post_container .entry-content a:visited {
+  color: #FF3B3F;
+}
+
+/* line 15, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_post.scss */
+.blog_post_container .entry-content a:hover {
+  color: #9d0003;
+  text-decoration: none;
+  text-shadow: 0.03em 0 #fff, -0.03em 0 #fff, 0 0.03em #fff, 0 -0.03em #fff, 0.06em 0 #fff, -0.06em 0 #fff, 0.09em 0 #fff, -0.09em 0 #fff, 0.12em 0 #fff, -0.12em 0 #fff, 0.15em 0 #fff, -0.15em 0 #fff;
+  background-image: linear-gradient(#fff, #fff), linear-gradient(#fff, #fff), linear-gradient(#9d0003, #9d0003);
+  background-size: .05em 1px, .05em 1px, 1px 1px;
+  background-repeat: no-repeat, no-repeat, repeat-x;
+  background-position: 0% 90%, 100% 90%, 0% 90%;
+}
+
+/* line 32, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_mixins.scss */
+.blog_post_container .entry-content a:hover::selection {
+  text-shadow: 0.03em 0 #eee, -0.03em 0 #eee, 0 0.03em #eee, 0 -0.03em #eee, 0.06em 0 #eee, -0.06em 0 #eee, 0.09em 0 #eee, -0.09em 0 #eee, 0.12em 0 #eee, -0.12em 0 #eee, 0.15em 0 #eee, -0.15em 0 #eee;
+  background: #eee;
+}
+
+/* line 37, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_mixins.scss */
+.blog_post_container .entry-content a:hover::-moz-selection {
+  text-shadow: 0.03em 0 #eee, -0.03em 0 #eee, 0 0.03em #eee, 0 -0.03em #eee, 0.06em 0 #eee, -0.06em 0 #eee, 0.09em 0 #eee, -0.09em 0 #eee, 0.12em 0 #eee, -0.12em 0 #eee, 0.15em 0 #eee, -0.15em 0 #eee;
+  background: #eee;
+}
+
+/* line 42, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_mixins.scss */
+.blog_post_container .entry-content a:hover:before, .blog_post_container .entry-content a:hover:after, .blog_post_container .entry-content a:hover *, .blog_post_container .entry-content a:hover *:before, .blog_post_container .entry-content a:hover *:after {
+  text-shadow: none;
+}
+
+/* line 46, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_mixins.scss */
+.blog_post_container .entry-content a:hover:visited {
+  color: #9d0003;
+}
+
+/* line 21, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_post.scss */
+.blog_post_container .entry-content .bigfoot-footnote__button {
+  height: auto;
+  min-width: auto;
+  padding: 0.25em;
+  margin-top: 0.2em;
+  border-radius: 0.5em;
+}
+
+/* line 27, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_post.scss */
+.blog_post_container .entry-content .bigfoot-footnote__button .bigfoot-footnote__button__circle {
+  width: 4px;
+  height: 4px;
+  margin-right: 2px;
+}
+
+/* line 31, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_post.scss */
+.blog_post_container .entry-content .bigfoot-footnote__button .bigfoot-footnote__button__circle:last-child {
+  margin-right: 0;
+}
+
+/* line 35, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_post.scss */
+.blog_post_container .entry-content .bigfoot-footnote {
+  border-radius: 7px;
+  border: 1px solid #f6f6f6;
+}
+
+/* line 38, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_post.scss */
+.blog_post_container .entry-content .bigfoot-footnote .bigfoot-footnote__content {
+  font-size: 90%;
+  padding: 12px 18px;
+}
+
+/* line 45, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_post.scss */
+.blog_post_container .entry-content .footnotes {
+  font-size: 90%;
+}
+
+/* line 48, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_post.scss */
+.blog_post_container .entry-content .footnotes .footnote {
+  line-height: 1.4em;
+}
+
+/* line 51, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_post.scss */
+.blog_post_container .entry-content .footnotes .footnote p {
+  padding-left: 8px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+/* line 58, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_post.scss */
+.blog_post_container .entry-content .footnotes .footnote-return {
+  text-shadow: none;
+  background-image: none;
+  margin-left: 8px;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 14px;
+}
+
+/* line 62, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_post.scss */
+.blog_post_container .entry-content .footnotes .footnote-return img {
+  display: none !important;
+}
+
+/* line 66, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_post.scss */
+.blog_post_container .entry-content .footnotes .footnote-return::before {
+  width: 15px;
+  height: 15px;
+  content: "\f3bf";
+}
+
 /*# sourceMappingURL=style.css.map */

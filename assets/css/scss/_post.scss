@@ -1,0 +1,74 @@
+/**
+ * Single post styles
+ */
+
+@use "sass:color";
+
+.blog_post_container {
+  .entry-content {
+    line-height: 1.4em;
+
+    // Links
+    a {
+      @include linkUnderlines(#fff, $color-highlight);
+      $color-link-hover: scale-color($color-highlight, $lightness: -50%);
+      &:hover {
+        @include linkUnderlines(#fff, $color-link-hover);
+      }
+    }
+
+    // Footnotes
+    .bigfoot-footnote__button {
+      height: auto;
+      min-width: auto;
+      padding: 0.25em;
+      margin-top: 0.2em;
+      border-radius: 0.5em;
+      .bigfoot-footnote__button__circle {
+        width: 4px;
+        height: 4px;
+        margin-right: 2px;
+        &:last-child { margin-right: 0; }
+      }
+    }
+
+    .bigfoot-footnote {
+      border-radius: 7px;
+      border: 1px solid #f6f6f6;
+      .bigfoot-footnote__content {
+        font-size: 90%;
+        padding: 12px 18px;
+      }
+    }
+
+    // Footnote section
+    .footnotes {
+      font-size: 90%;
+
+      .footnote {
+        line-height: 1.4em;
+        //margin-left: -1rem;
+        p {
+          padding-left: 8px;
+          margin-top: 16px;
+          margin-bottom: 16px;
+        }
+      }
+      // Cancel out the link underline rules, and force a Font Awesome icon
+      .footnote-return {
+        text-shadow: none;
+        background-image: none;
+        margin-left: 8px;
+        img { display: none !important; }
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        font-size: 14px;
+        &::before {
+          width: 15px;
+          height: 15px;
+          content: "\f3bf";
+        }
+      }
+    }
+  }
+}
