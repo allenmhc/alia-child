@@ -4,26 +4,52 @@
 
 @use "sass:color";
 
+$color-link-hover: scale-color($color-highlight, $lightness: -50%);
+
 .blog_post_container {
   .entry-content {
     line-height: 1.4em;
 
+    // Paragraphs
+    p {
+      margin-top: 24px;
+      margin-bottom: 24px;
+    }
+
+    // Lists
+    li {
+      line-height: 1.4em;
+      margin-bottom: 12px;
+    }
+
+    // Quotes
+    blockquote {
+      margin-top: 40px;
+      margin-bottom: 32px;
+      font-size: 18px;
+      font-family: "Noto Serif", serif;
+      line-height: 1.6em;
+      cite {
+        margin-top: -24px; // Undo the 24px margin bottom from the inline <p>
+        letter-spacing: 0;
+      }
+    }
+
     // Links
     a {
       @include linkUnderlines(#fff, $color-highlight);
-      $color-link-hover: scale-color($color-highlight, $lightness: -50%);
-      &:hover {
-        @include linkUnderlines(#fff, $color-link-hover);
-      }
+      &:hover { @include linkUnderlines(#fff, $color-link-hover); }
     }
 
     // Footnotes
     .bigfoot-footnote__button {
       height: auto;
       min-width: auto;
-      padding: 0.25em;
+      padding: 3px;
       margin-top: 0.2em;
       border-radius: 0.5em;
+      background-color: $color-subheader-text;
+      &:hover { background-color: $color-link-hover; }
       .bigfoot-footnote__button__circle {
         width: 4px;
         height: 4px;

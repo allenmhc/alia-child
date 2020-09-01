@@ -335,12 +335,39 @@
  * Single post styles
  */
 @use "sass:color";
-/* line 8, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_post.scss */
+/* line 10, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_post.scss */
 .blog_post_container .entry-content {
   line-height: 1.4em;
 }
 
-/* line 12, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_post.scss */
+/* line 14, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_post.scss */
+.blog_post_container .entry-content p {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+/* line 20, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_post.scss */
+.blog_post_container .entry-content li {
+  line-height: 1.4em;
+  margin-bottom: 12px;
+}
+
+/* line 26, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_post.scss */
+.blog_post_container .entry-content blockquote {
+  margin-top: 40px;
+  margin-bottom: 32px;
+  font-size: 18px;
+  font-family: "Noto Serif", serif;
+  line-height: 1.6em;
+}
+
+/* line 32, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_post.scss */
+.blog_post_container .entry-content blockquote cite {
+  margin-top: -24px;
+  letter-spacing: 0;
+}
+
+/* line 39, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_post.scss */
 .blog_post_container .entry-content a {
   color: #FF3B3F;
   text-decoration: none;
@@ -373,7 +400,7 @@
   color: #FF3B3F;
 }
 
-/* line 15, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_post.scss */
+/* line 41, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_post.scss */
 .blog_post_container .entry-content a:hover {
   color: #9d0003;
   text-decoration: none;
@@ -406,57 +433,63 @@
   color: #9d0003;
 }
 
-/* line 21, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_post.scss */
+/* line 45, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_post.scss */
 .blog_post_container .entry-content .bigfoot-footnote__button {
   height: auto;
   min-width: auto;
-  padding: 0.25em;
+  padding: 3px;
   margin-top: 0.2em;
   border-radius: 0.5em;
+  background-color: #A9A9A9;
 }
 
-/* line 27, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_post.scss */
+/* line 52, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_post.scss */
+.blog_post_container .entry-content .bigfoot-footnote__button:hover {
+  background-color: #9d0003;
+}
+
+/* line 53, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_post.scss */
 .blog_post_container .entry-content .bigfoot-footnote__button .bigfoot-footnote__button__circle {
   width: 4px;
   height: 4px;
   margin-right: 2px;
 }
 
-/* line 31, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_post.scss */
+/* line 57, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_post.scss */
 .blog_post_container .entry-content .bigfoot-footnote__button .bigfoot-footnote__button__circle:last-child {
   margin-right: 0;
 }
 
-/* line 35, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_post.scss */
+/* line 61, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_post.scss */
 .blog_post_container .entry-content .bigfoot-footnote {
   border-radius: 7px;
   border: 1px solid #f6f6f6;
 }
 
-/* line 38, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_post.scss */
+/* line 64, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_post.scss */
 .blog_post_container .entry-content .bigfoot-footnote .bigfoot-footnote__content {
   font-size: 90%;
   padding: 12px 18px;
 }
 
-/* line 45, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_post.scss */
+/* line 71, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_post.scss */
 .blog_post_container .entry-content .footnotes {
   font-size: 90%;
 }
 
-/* line 48, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_post.scss */
+/* line 74, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_post.scss */
 .blog_post_container .entry-content .footnotes .footnote {
   line-height: 1.4em;
 }
 
-/* line 51, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_post.scss */
+/* line 77, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_post.scss */
 .blog_post_container .entry-content .footnotes .footnote p {
   padding-left: 8px;
   margin-top: 16px;
   margin-bottom: 16px;
 }
 
-/* line 58, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_post.scss */
+/* line 84, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_post.scss */
 .blog_post_container .entry-content .footnotes .footnote-return {
   text-shadow: none;
   background-image: none;
@@ -466,12 +499,12 @@
   font-size: 14px;
 }
 
-/* line 62, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_post.scss */
+/* line 88, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_post.scss */
 .blog_post_container .entry-content .footnotes .footnote-return img {
   display: none !important;
 }
 
-/* line 66, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_post.scss */
+/* line 92, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_post.scss */
 .blog_post_container .entry-content .footnotes .footnote-return::before {
   width: 15px;
   height: 15px;

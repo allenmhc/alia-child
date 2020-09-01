@@ -93,6 +93,7 @@ function alia_custom_css() {
 				wp_enqueue_style( 'alia-font-titles', get_theme_file_uri('/assets/fonts/'.alia_option('alia_title_font', 'poppins').'.css'), array(), null );
 			}
 		}
+    wp_enqueue_style( 'alia-fonts', get_theme_file_uri('/assets/fonts/notoserif.css'), array(), null );
 	} else {
 		// Add custom fonts URL
 		wp_enqueue_style( 'alia-fonts', alia_custom_fonts_url(), array(), null );
