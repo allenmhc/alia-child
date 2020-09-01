@@ -304,4 +304,31 @@
   font-weight: 400;
 }
 
+/* line 37, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_page.scss */
+.stories_grid_wrapper.row .category_container {
+  display: block;
+}
+
+/* line 41, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_page.scss */
+.stories_grid_wrapper.row .category_title {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1em;
+  padding-top: 24px;
+  padding-bottom: 8px;
+}
+
+/* line 47, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_page.scss */
+.stories_grid_wrapper.row .category_title::before, .stories_grid_wrapper.row .category_title::after {
+  display: none;
+}
+
+/* line 52, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_page.scss */
+.story_circle .empty_thumbnail_spacer {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background-color: #E0E0E0;
+}
+
 /*# sourceMappingURL=style.css.map */
