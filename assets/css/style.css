@@ -488,17 +488,17 @@ figcaption.credit {
 
 /* line 83, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_post.scss */
 .blog_post_container .entry-content .footnotes .footnote {
-  line-height: 1.4em;
+  line-height: 1.3em;
 }
 
-/* line 86, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_post.scss */
+/* line 85, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_post.scss */
 .blog_post_container .entry-content .footnotes .footnote p {
   padding-left: 8px;
-  margin-top: 16px;
-  margin-bottom: 16px;
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 
-/* line 93, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_post.scss */
+/* line 92, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_post.scss */
 .blog_post_container .entry-content .footnotes .footnote-return {
   text-shadow: none;
   background-image: none;
@@ -508,12 +508,12 @@ figcaption.credit {
   font-size: 14px;
 }
 
-/* line 97, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_post.scss */
+/* line 96, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_post.scss */
 .blog_post_container .entry-content .footnotes .footnote-return img {
   display: none !important;
 }
 
-/* line 101, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_post.scss */
+/* line 100, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_post.scss */
 .blog_post_container .entry-content .footnotes .footnote-return::before {
   width: 15px;
   height: 15px;

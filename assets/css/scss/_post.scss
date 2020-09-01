@@ -81,12 +81,11 @@ figcaption.credit {
       font-size: 90%;
 
       .footnote {
-        line-height: 1.4em;
-        //margin-left: -1rem;
+        line-height: 1.3em;
         p {
           padding-left: 8px;
-          margin-top: 16px;
-          margin-bottom: 16px;
+          margin-top: 8px;
+          margin-bottom: 8px;
         }
       }
       // Cancel out the link underline rules, and force a Font Awesome icon
