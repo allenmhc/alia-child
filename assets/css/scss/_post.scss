@@ -7,12 +7,14 @@
 $color-link-hover: scale-color($color-highlight, $lightness: -50%);
 
 // Featured images & credits
-figcaption.credit {
+figcaption.credit,
+.entry-content figcaption,
+.entry-content .wp-caption-text {
   font-size: 13px;
   text-align: center;
   font-style: normal;
   color: $color-subheader-text;
-  line-height: 1em;
+  line-height: 1.4em;
 }
 
 .blog_post_container {
