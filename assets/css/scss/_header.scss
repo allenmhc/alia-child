@@ -25,6 +25,22 @@
   }
   .logo_strong {
     font-weight: 700;
+    position: relative;
+    overflow-y: visible;
+  }
+
+  // Logo text flourish
+  .logo_strong::after {
+    content: '';
+    display: block;
+    background-color: $color-highlight;
+    width: 4px;
+    height: 4px;
+    border-radius: 1px;
+    position: absolute;
+    bottom: 1px;
+    left: 34px;
+    transform: rotate(30deg);
   }
 }
 

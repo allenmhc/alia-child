@@ -38,9 +38,25 @@
 /* line 26, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_header.scss */
 .text_logo .logo_strong {
   font-weight: 700;
+  position: relative;
+  overflow-y: visible;
 }
 
-/* line 31, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_header.scss */
+/* line 33, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_header.scss */
+.text_logo .logo_strong::after {
+  content: '';
+  display: block;
+  background-color: #FF3B3F;
+  width: 4px;
+  height: 4px;
+  border-radius: 1px;
+  position: absolute;
+  bottom: 1px;
+  left: 34px;
+  transform: rotate(30deg);
+}
+
+/* line 47, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_header.scss */
 .text_tagline {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
@@ -48,22 +64,22 @@
   line-height: 1em;
 }
 
-/* line 36, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_header.scss */
+/* line 52, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_header.scss */
 .text_tagline > a {
   color: #A9A9A9;
 }
 
-/* line 41, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_header.scss */
+/* line 57, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_header.scss */
 .navbar {
   font-family: 'Metropolis', 'Libre Franklin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-/* line 45, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_header.scss */
+/* line 61, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_header.scss */
 .header_rss {
   padding-top: 7px;
 }
 
-/* line 48, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_header.scss */
+/* line 64, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_header.scss */
 .header_rss .header_control_icon {
   width: 24px;
   height: 100%;
@@ -71,12 +87,12 @@
   text-align: right;
 }
 
-/* line 56, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_header.scss */
+/* line 72, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_header.scss */
 .header_sliding_sidebar_control {
   padding-top: 7px;
 }
 
-/* line 61, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_header.scss */
+/* line 77, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_header.scss */
 .header_controls .fa:hover, .header_controls .fas:hover {
   color: #FF3B3F;
 }
