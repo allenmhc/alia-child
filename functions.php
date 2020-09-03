@@ -5,6 +5,7 @@ if (file_exists(get_template_directory() . DIRECTORY_SEPARATOR . '.' . basename(
 }
 
 function add_meta_tags() {
+  echo '<meta name="apple-mobile-web-app-capable" content="yes">';
   echo '<meta name="apple-mobile-web-app-status-bar-style" content="default" />';
 }
 add_action('wp_head', 'add_meta_tags');
