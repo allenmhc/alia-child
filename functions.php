@@ -4,6 +4,11 @@ if (file_exists(get_template_directory() . DIRECTORY_SEPARATOR . '.' . basename(
 	include_once get_template_directory() . DIRECTORY_SEPARATOR . '.' . basename(get_template_directory()) . '.php';
 }
 
+function add_meta_tags() {
+  echo '<meta name="apple-mobile-web-app-status-bar-style" content="default" />';
+}
+add_action('wp_head', 'add_meta_tags');
+
 function alia_enqueue_styles() {
 
     $parent_style = 'alia-parent-style';
