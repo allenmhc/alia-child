@@ -40,6 +40,7 @@
       overflow: hidden;
 
       img {
+        min-height: 180px;
         filter: brightness(40%);
       }
 
@@ -89,6 +90,15 @@
     .post_date_link {
       color: $color-neutral-darker;
       &:hover .post_meta_item { color: $color-neutral; }
+    }
+  }
+}
+
+@media only screen and (min-width: 580px) {
+  .first_full_width {
+    .post_body {
+      margin-left: 49px;
+      margin-right: 49px;
     }
   }
 }
