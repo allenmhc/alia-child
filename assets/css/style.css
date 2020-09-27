@@ -187,17 +187,23 @@
   bottom: 0;
 }
 
-/* line 66, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_home.scss */
+/* line 65, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_home.scss */
+.blog_index_area .first_full_width .post_title {
+  font-size: 20px;
+  line-height: 1.3em;
+}
+
+/* line 71, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_home.scss */
 .blog_index_area .first_full_width .post_title a {
   color: #EFEFEF;
 }
 
-/* line 68, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_home.scss */
+/* line 73, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_home.scss */
 .blog_index_area .first_full_width .post_title a::before {
   background-color: #EFEFEF;
 }
 
-/* line 71, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_home.scss */
+/* line 76, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_home.scss */
 .blog_index_area .first_full_width .post_title a::after {
   background: linear-gradient(to right, #eeeeee 0, #eeeeee 35%, #eeeeee 65%, rgba(255, 255, 255, 0) 100%);
   background: -ms-linear-gradient(left, #eeeeee 0, #eeeeee 35%, #eeeeee 65%, rgba(255, 255, 255, 0) 100%);
@@ -207,56 +213,56 @@
   background: -webkit-gradient(linear, left top, right top, color-stop(0%, #eeeeee), color-stop(35%, #eeeeee), color-stop(65%, #eeeeee), color-stop(100%, rgba(255, 255, 255, 0)));
 }
 
-/* line 81, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_home.scss */
+/* line 86, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_home.scss */
 .blog_index_area .first_full_width .post_meta_item {
   color: #E0E0E0;
 }
 
-/* line 83, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_home.scss */
+/* line 88, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_home.scss */
 .blog_index_area .first_full_width .post_meta_item .post_meta_icon {
   color: #E0E0E0;
 }
 
-/* line 84, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_home.scss */
+/* line 89, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_home.scss */
 .blog_index_area .first_full_width .post_meta_item.meta_item_category a {
   color: #E0E0E0;
 }
 
-/* line 86, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_home.scss */
+/* line 91, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_home.scss */
 .blog_index_area .first_full_width .post_meta_item.meta_item_category a:hover {
   color: #EFEFEF;
 }
 
-/* line 90, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_home.scss */
+/* line 95, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_home.scss */
 .blog_index_area .first_full_width .post_date_link {
   color: #E0E0E0;
 }
 
-/* line 92, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_home.scss */
+/* line 97, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_home.scss */
 .blog_index_area .first_full_width .post_date_link:hover .post_meta_item {
   color: #EFEFEF;
 }
 
 @media only screen and (min-width: 580px) {
-  /* line 99, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_home.scss */
+  /* line 104, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_home.scss */
   .first_full_width .post_body {
     margin-left: 49px;
     margin-right: 49px;
   }
 }
 
-/* line 107, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_home.scss */
+/* line 112, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_home.scss */
 .post_date_link .continue_reading_dots {
   float: right;
   margin-left: 0;
 }
 
-/* line 111, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_home.scss */
+/* line 116, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_home.scss */
 .post_date_link .continue_reading_dots .continue_reading_squares {
   float: left;
 }
 
-/* line 115, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_home.scss */
+/* line 120, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_home.scss */
 .post_date_link .continue_reading_dots .continue_reading_squares > span {
   width: 2px;
   height: 2px;
@@ -272,7 +278,7 @@
   transition: all 0.15s ease-in;
 }
 
-/* line 130, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_home.scss */
+/* line 135, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_home.scss */
 .post_date_link .continue_reading_dots .readmore_icon {
   float: left;
   margin-top: 9px;
@@ -285,13 +291,13 @@
   transition: all 0.15s ease-in;
 }
 
-/* line 144, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_home.scss */
+/* line 149, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_home.scss */
 .post_date_link:hover .continue_reading_dots .continue_reading_squares > span {
   margin-right: 4px;
   background-color: #ff374a;
 }
 
-/* line 149, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_home.scss */
+/* line 154, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_home.scss */
 .post_date_link:hover .continue_reading_dots .readmore_icon {
   margin-left: 1px;
   color: #ff374a;
