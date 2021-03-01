@@ -546,11 +546,4 @@ figcaption.credit,
   display: none !important;
 }
 
-/* line 102, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_post.scss */
-.blog_post_container .entry-content .footnotes .footnote-return::before {
-  width: 15px;
-  height: 15px;
-  content: "\f3bf";
-}
-
 /*# sourceMappingURL=style.css.map */
