@@ -99,11 +99,6 @@ figcaption.credit,
         font-family: "Font Awesome 5 Free";
         font-weight: 900;
         font-size: 14px;
-        &::before {
-          width: 15px;
-          height: 15px;
-          content: "\f3bf";
-        }
       }
     }
   }
