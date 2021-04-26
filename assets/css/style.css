@@ -69,17 +69,24 @@
   color: #A9A9A9;
 }
 
-/* line 57, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_header.scss */
+@media only screen and (max-width: 580px) {
+  /* line 59, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_header.scss */
+  .text_tagline .tagline_extended {
+    display: none;
+  }
+}
+
+/* line 66, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_header.scss */
 .navbar {
   font-family: 'Metropolis', 'Libre Franklin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-/* line 61, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_header.scss */
+/* line 70, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_header.scss */
 .header_rss {
   padding-top: 7px;
 }
 
-/* line 64, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_header.scss */
+/* line 73, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_header.scss */
 .header_rss .header_control_icon {
   width: 24px;
   height: 100%;
@@ -87,12 +94,12 @@
   text-align: right;
 }
 
-/* line 72, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_header.scss */
+/* line 81, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_header.scss */
 .header_sliding_sidebar_control {
   padding-top: 7px;
 }
 
-/* line 77, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_header.scss */
+/* line 86, ../../../../../Users/allen/Projects/alia-child/assets/css/scss/_header.scss */
 .header_controls .fa:hover, .header_controls .fas:hover {
   color: #FF3B3F;
 }

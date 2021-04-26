@@ -54,6 +54,15 @@
   }
 }
 
+@media only screen and (max-width: 580px) {
+  .text_tagline {
+    .tagline_extended {
+      display: none;
+    }
+  }
+}
+
+
 .navbar {
   font-family: 'Metropolis', 'Libre Franklin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }

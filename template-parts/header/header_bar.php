@@ -29,7 +29,9 @@ if (alia_option('alia_default_logo_retina')) {
 				<h3 class="screen-reader-text"><?php bloginfo( 'name' ); ?></h3>
 			<?php } ?>
       <div class="text_tagline">
-        <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'description' ); ?></a>
+        <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+          <span class="tagline_extended">creating</span> space for reflection
+        </a>
       </div>
       </a>
 		</div>
