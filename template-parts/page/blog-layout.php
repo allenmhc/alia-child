@@ -25,4 +25,4 @@ endwhile;
 <!-- Close grid_list -->
 </div>
 
-<? alia_pagination(); ?>
+<?php alia_pagination(); ?>
