@@ -43,9 +43,9 @@ function alia_custom_body_css() {
   $main_italic_font_css = 'nunito_sansitalic, sans-serif';
   $main_bold_italic_font_css = 'nunito_sansbold_italic, sans-serif';
   $custom_css = "body { font-family: {$main_font_css}; }";
-  $custom_css .= "strong { font-family: {$main_bold_font_css}; }";
-  $custom_css .= "em { font-family: {$main_italic_font_css}; }";
-  $custom_css .= "strong em, em strong { font-family: {$main_bold_italic_font_css}; }";
+  $custom_css .= "strong { font-family: {$main_bold_font_css}; font-style: normal; }";
+  $custom_css .= "em { font-family: {$main_italic_font_css}; font-style: normal; }";
+  $custom_css .= "strong em, em strong { font-family: {$main_bold_italic_font_css}; font-style: normal; }";
   wp_add_inline_style( 'alia-customstyle', $custom_css );
 }
 endif;
