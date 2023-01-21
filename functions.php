@@ -371,4 +371,12 @@ endif;
 
 // About Me Widget Override
 require dirname( __FILE__ ) . '/inc/widgets/about-me.php';
+
+// Add more social networks
+function alia_child_setup() {
+	global $social_networks;
+
+	$social_networks['mastodon'] = 'Mastodon';
+}
+add_action( 'after_setup_theme', 'alia_child_setup' );
 ?>

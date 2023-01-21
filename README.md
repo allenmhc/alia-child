@@ -15,3 +15,4 @@ Tweaks:
 - Update header styles
   - Add tagline and custom spacing
   - Add Metropolis font to navbar
+- Added new social networks to list (Mastodon)
